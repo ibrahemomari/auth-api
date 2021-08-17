@@ -8,9 +8,9 @@
 
 ###### Author: Ibrahem Alomari
 
-* ##### [Actions](https://github.com/ibrahemomari/bearer-auth/actions)
-* ##### [Pull Request](https://github.com/ibrahemomari/bearer-auth/pull/1)
-* ##### [Heroku](https://ibrahem-basic-api-server.herokuapp.com/)
+* ##### [Actions](https://github.com/ibrahemomari/auth-api/actions)
+* ##### [Pull Request](https://github.com/ibrahemomari/auth-api/pull/1)
+* ##### [Heroku](https://ibrahem-auth-api.herokuapp.com/)
 
 ---
 ###### Setup
