@@ -38,6 +38,10 @@ authRouter.get('/users', bearerAuth, permissions('delete'), async (req, res, nex
   res.status(200).json(list);
 });
 
+authRouter.get('/', async (req, res, next) => {
+  res.status(200).send('the server is working :) :)');
+});
+
 authRouter.get('/secret', bearerAuth, async (req, res, next) => {
   res.status(200).send('Welcome to the secret area')
 });
