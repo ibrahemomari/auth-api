@@ -6,12 +6,20 @@ const foodModel = require("./food/model");
 const clothesModel = require("./clothes/model");
 const dataCollection = require("./data-collection");
 
+let sequelizeOptions = {
+      dialectOptions: {
+          ssl: {
+            require: true,
+            rejectUnauthorized: false,
+          }
+        }
+  };
 const DATABASE_URL =
   process.env.NODE_ENV == "test"
     ? "sqlite:memory"
     : process.env.DATABASE_URL;
 
-const sequelize = new Sequelize(DATABASE_URL);
+const sequelize = new Sequelize(DATABASE_URL,sequelizeOptions);
 const food = foodModel(sequelize, DataTypes);
 const clothes = clothesModel(sequelize, DataTypes);
 
